@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js.map">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="SCSS/prueba.scss">
+    <link rel="stylesheet" href="SCSS/prueba.css">
+    <link rel="stylesheet" href="SCSS/gridsMobileFirst.scss">
+    <link rel="stylesheet" href="SCSS/gridsMobileFirst.css">
+    <meta name="keywords" content="ANIMALES, ADOPCIÓN, FORMULARIOS, NORMAS, CASTRACIÓN, ALIMENTACIÓN, HOGAR">
+    <meta name="description" content="Todo los documentos e información necesaria para adoptar a alguno de nuestros animales de Helpaws">
+    <title>Adopciones | Helpaws</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark static-top backColor">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html">
+                <img class="nav__logo" src="img/logo.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav__text" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav__text" href="Staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav__text" href="Animales.html">Animales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav__text" aria-current="page" href="Adopciones.html">Adopciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav__text" href="Talleres.html">Talleres</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Adopciones</li>
+        </ol>
+    </nav>
+    <h1>¡Encontrá todo lo necesario para sumar un nuevo integrante a tu familia!</h1>
+    <main class="grid__adopcion">
+        <div class="main__adopcion grid__adopcion__one">
+            <h3 class="main__title">Normas de adopción</h3>
+            <p class="main__text">El adoptante se compromete a que el animal será utilizado únicamente para compañía y no para otros fines. </p>
+            <p class="main__text">Una vez haya sido adoptado el animal este no podrá ser utilizado para experimentos, peleas, reproducción masiva, caza, entrenamiento.</p>
+            <p class="main__text"> El adoptante se compromete a no maltratar al animal. Cualquier situación que pueda ser entendida como maltrato representará un asunto legal.</p>
+            <p class="main__text">El adoptante está en la obligación de cubrir y proporcionar la alimentación y bebida necesaria para el animal. También se compromete a asearlo y llevarlo periódicamente al veterinario según sea necesario. </p>
+            <p class="main__text">El adoptante está obligado a esterilizar al animal. Tendrá un plazo máximo de un año para hacerlo, si es que el animal no cuenta con una situación de salud particular.</p>
+
+        </div>
+        <div class="form grid__adopcion__two">
+            <h2 class="form__title">Formulario de adopción</h2>
+            <form action="# ">
+                <div class="form-group">
+                    <div class="form__subtitle">Animal a adoptar
+                        <select name="Animales ">
+                            <option id="Elegir Animal" hidden></option>
+                            <option id="Perro ">Perro</option>
+                            <option id="Gato ">Gato</option>
+                            <option id="Otro ">Otro</option>
+                    </select>
+                    </div>
+
+                    <label class="form__subtitle" for="apellido ">Apellidos:</label>
+                    <input type="apellido " class="form-control " id="apellido " placeholder="Ingrese apellidos " name="apellido ">
+                    <label class="form__subtitle" for="nombre ">Nombres:</label>
+                    <input type="nombre " class="form-control " id="nombre " placeholder="Ingrese nombres " name="nombre ">
+                    <label class="form__subtitle" for="email ">Email:</label>
+                    <input type="email " class="form-control " id="email " placeholder="Ingrese email " name="email ">
+                </div>
+                <button type="submit " class="btn btn-default ">
+                        Enviar
+                   </button>
+                <button type="resett " class="btn btn-default ">
+                    Resetear
+               </button>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-light text-center ">
+        <nav>
+            <ul class="grid__siteMap">
+                <li>
+                    <a class="nav__text__sitemap" aria-current="page" href="Index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav__text__sitemap" href="Staff.html">Staff</a>
+                </li>
+                <li>
+                    <a class="nav__text__sitemap" href="Animales.html">Animales</a>
+                </li>
+                <li>
+                    <a class="nav__text__sitemap" href="Adopciones.html">Adopciones</a>
+                </li>
+                <li>
+                    <a class="nav__text__sitemap" href="Talleres.html">Talleres</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 footer__container ">
+            <!----Social media -->
+            <section class="mb-4 footer__img ">
+                <a href=" "><img src="img/facebook.png " alt="facebook"></a>
+
+                <a href=" "><img src="img/instagram.png " alt="instagram"></a>
+            </section>
+        </div>
+        <p class="text-center p-3 footer__text ">
+            ¡Seguinos en nuestras redes!
+        </p>
+    </footer>
+
+</body>
+
+</html>
